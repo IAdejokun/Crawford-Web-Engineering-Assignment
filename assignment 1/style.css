@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --poppins: "Poppins", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 27, 27);
+    color: white;
+    padding: 15px;
+    position: sticky;
+    align-items: center;
+    font-family: var(--poppins);
+}
+
+
+nav p a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul li{
+    padding: 0px 5px;
+}
+
+nav > ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: ease-in-out all 1000ms;
+}
+
+nav > ul li a:hover{
+  border-bottom: 1px solid white;
+  
+}
+nav button{
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: var(--poppins);
+    transition: ease-in-out all 100ms;
+    cursor: pointer;
+}
+
+nav button:hover{
+    color:black;
+    background-color: white;
+}
+
+#heroSection {
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("./assets/heroSectionImg.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("./assets/heroSectionImg.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay p{
+    font-family: var(--poppins);
+    font-size: 55px;
+    font-weight: 700;
+    top: 50%;
+  left: 50%;
+  transform: translate(0%, 170%);
+}
+
+
+.overlay p:nth-child(2){
+    font-size: 35px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+#about h2{
+    margin:15px 0px;
+    text-align:center;
+    font-size: 50px;
+    font-family: var(--poppins);
+}
+
+
+.aboutSection{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 35px;
+}
+
+.aboutSection img{
+    height: auto;
+    width: 100%;
+}
+
+.aboutSection .right{
+    margin: 0px 50px;
+}
+
+.aboutSection .right p{
+    font-family: var(--poppins);
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.aboutSection .right button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--poppins);
+    transition: ease-in-out all 100ms;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aboutSection .right button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#services{
+    background-color: black;
+    color: white;
+    font-family: var(--poppins);
+    padding-bottom: 80px;
+}
+
+#services h3{
+    font-size: 55px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#services > p {
+    font-family: var(--poppins);
+    font-weight: 200;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cardServices{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+
+.card{
+    margin:0 15px;
+}
+
+.cardImg > img{
+    height: auto;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardParagraph p{
+    font-size: 30px;
+}
+
+#contact{
+    font-family: var(--poppins);
+    padding-bottom: 80px;
+}
+
+#contact h3{
+    font-size: 55px;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#contact > p {
+    font-family: var(--poppins);
+    font-weight: 200;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+form .inputField{
+    display: flex;
+}
+
+.inputField{
+    margin-top: 30px;
+}
+
+input{
+    padding: 10px;
+    margin-right: 40px;
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(123, 123, 197, 0.473);
+}
+
+textarea{
+    border: 1px solid rgba(123, 123, 197, 0.473);
+    width: 30%;
+}
+
+
+.buttonDiv button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--poppins);
+    transition: ease-in-out all 100ms;
+    cursor: pointer;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.buttonDiv button:hover{
+    background-color: rgb(42, 161, 42);
+}
+
+form > div {
+ padding: 30px;
+ padding-bottom: 60px;
+}
